@@ -1,0 +1,12 @@
+{
+  "name": "node-1-afternoon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/truongtony9/node-1-afternoon.git",
+  "author": "truongtony9 <truong99t@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
