@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mc = require(__dirname + "/controllers/messages_controller");
 
 const app = express();
+const port = 3000;
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../public/build"));
@@ -13,7 +14,6 @@ app.get(messagesBaseUrl, mc.read);
 app.put(`${messagesBaseUrl}/:id`, mc.update);
 app.delete(`${messagesBaseUrl}/:id`, mc.delete);
 
-const port = 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}.`);
 });
